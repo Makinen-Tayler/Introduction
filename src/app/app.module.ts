@@ -8,6 +8,22 @@ import { AboutComponent } from './about/about.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { NewsComponent } from './news/news.component';
+import { ContactComponent } from './contact/contact.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatMenuModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatSidenavModule,
+  MatListModule
+} from '@angular/material';
+
+import { HttpClientModule } from '@angular/common/http';
+import { NewsApiService } from './news-api.service';
 
 @NgModule({
   declarations: [
@@ -16,13 +32,24 @@ import { FooterComponent } from './footer/footer.component';
     AboutComponent,
     DashboardComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    NewsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule
   ],
-  providers: [],
+  providers: [NewsApiService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
