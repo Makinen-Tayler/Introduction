@@ -1,18 +1,22 @@
 .navListItems {
-    display: table;   
-	margin: 0 auto
+  margin: 0 auto;
 }
 
 .navList {
-    list-style: none;
+  list-style: none;
 }
 
-.navList li{
-    display: inline;
-    min-width: 696px;
-
+.navList li {
+  display: inline;
+  min-width: 696px;
 }
 
 .navListItem {
-    padding: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 10px;
+}
+
+.navbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
