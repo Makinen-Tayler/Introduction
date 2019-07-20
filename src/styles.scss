@@ -1,5 +1,8 @@
 body {
   background-color: #c1c5d2;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 a {
   cursor: pointer;
@@ -10,6 +13,9 @@ a {
 a:hover {
   opacity: 0.8;
 }
+// .content {
+//   padding-bottom: 80px; /* Height of the footer element */
+// }
 
 * {
   font-family: "Roboto", Arial, sans-serif;
@@ -17,8 +23,9 @@ a:hover {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  padding: 0;
+  // display: flex;
+  // min-height: 100vh;
+  // flex-direction: column;
 }
 
 // @import "~@angular/material/prebuilt-themes/indigo-pink.css";

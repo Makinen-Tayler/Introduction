@@ -18,5 +18,36 @@
 .navbar {
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 10px;
+}
+
+.header {
+  background-color: #24292e;
+}
+#avatar {
+  /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+  background-image: url(C:\users\tayma\onedrive\pictures\2015-09\Screenshot_2015-09-12-12-19-30.png);
+
+  /* make a square container */
+  width: 52px;
+  height: 52px;
+
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+
+  /* center the image vertically and horizontally */
+  background-position: top center;
+
+  /* round the edges to a circle with border radius 1/2 container size */
+  border-radius: 50%;
+}
+
+.mainHeader {
+  align-items: center;
+  // display: flex;
+  // flex-wrap: nowrap;
+}
+
+.containsAvatar {
+  display: inline-block;
 }
