@@ -1,7 +1,6 @@
 body {
   background-color: #c1c5d2;
-  margin: 0;
-  padding: 0;
+
   height: 100%;
 }
 a {
@@ -23,6 +22,8 @@ a:hover {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
   // display: flex;
   // min-height: 100vh;
   // flex-direction: column;

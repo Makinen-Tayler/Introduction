@@ -12,13 +12,28 @@
 }
 
 .navListItem {
-  padding: 0px 0px 0px 10px;
+  padding: 8px 14px 8px 14px;
+  font-weight: bold;
+}
+
+.navListItem a:hover {
+  opacity: 1 !important;
+}
+
+.navListItem:hover {
+  background-color: #464f59 !important;
+  cursor: pointer;
+}
+
+.navListItem:hover a {
+  color: #76d219;
 }
 
 .navbar {
   position: absolute;
   top: 10px;
   right: 10px;
+  margin-top: 2%;
 }
 
 .header {
@@ -26,7 +41,7 @@
 }
 #avatar {
   /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
-  background-image: url(C:\users\tayma\onedrive\pictures\2015-09\Screenshot_2015-09-12-12-19-30.png);
+  background-image: url(C:\users\tayma\onedrive\pictures\2015-05\p052j5kp.jpg);
 
   /* make a square container */
   width: 52px;
@@ -40,6 +55,14 @@
 
   /* round the edges to a circle with border radius 1/2 container size */
   border-radius: 50%;
+}
+
+#avatar:hover {
+  cursor: pointer;
+  opacity: 0.4; /* how much transparent you want image to be*/
+  filter: alpha(opacity=40); /* browser fix*/
+  -webkit-opacity: 0.4; /*vendor prefixes for website browsers*/
+  -moz-opacity: 0.4; /* same as above, edited thankx to @ Daniel_Lisik  */
 }
 
 .mainHeader {
